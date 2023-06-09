@@ -8,19 +8,22 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+
+import utility.ExcelReader;
 
 public class BaseClass {
-	
-	public WebDriver driver;
+
+	public static WebDriver driver;
 	public int browser = 1;
 	public String url = "https://uibank.uipath.com/";
-	//User name = ram29104
-	//Password = Praviram2910
-	
+	public static String excelName = "";
+	// User name = ram29104
+	// Password = Praviram2910
+
 	@BeforeClass
 	public void invokeBrowser() throws Exception {
-		
-		
+
 		System.out.println("Choose the Browser");
 		System.out.println("1.Chrome");
 		System.out.println("2.Firefox");
@@ -30,7 +33,7 @@ public class BaseClass {
 			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 			System.setProperty("webdriver.http.factory", "jdk-http-client");
 			driver = new ChromeDriver();
-			
+
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
 			break;
@@ -45,10 +48,16 @@ public class BaseClass {
 		driver.get(url);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		}
-	
+	}
+
 	@AfterClass
 	public void closeBrowser() {
 		driver.quit();
+	}
+	
+	@DataProvider(name="ExcelData")
+	public static Object[][] excelReader() {
+		Object[][] value = ExcelReader.getValueFromExcel(excelName);
+		return value;
 	}
 }
