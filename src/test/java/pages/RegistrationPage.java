@@ -1,13 +1,12 @@
 package pages;
 
-import org.openqa.selenium.By;
-
+import org.openqa.selenium.By; 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import base.BaseClass;
-import library.WrapperClass;
 
 public class RegistrationPage extends BaseClass {
-	
-	WrapperClass wrap = new WrapperClass();
 	
 	By logo = By.xpath("//a[@class='navbar-brand']");
 	By firstName = By.xpath("//input[@id='firstName']");
@@ -23,92 +22,99 @@ public class RegistrationPage extends BaseClass {
 	By email = By.xpath("//input[@id='email']");
 	By password = By.xpath("//input[@id='password']");
 	By registerBtn = By.xpath("//button[@type='submit']");
-	
+	private WebDriver driver;
+
+	public RegistrationPage(WebDriver driver) {
+		this.driver=driver;
+	}
+
 	public LoginPage clickOnLogo() {
 		driver.findElement(logo).click();
-		return new LoginPage();
+		return new LoginPage(driver);
 	}
-	
+
 	public Boolean validateAllElementsInRegisterPage() {
-		if(driver.findElement(userName).isDisplayed() && driver.findElement(email).isDisplayed() && driver.findElement(password).isDisplayed()) {
+		if (driver.findElement(userName).isDisplayed() && driver.findElement(email).isDisplayed()
+				&& driver.findElement(password).isDisplayed()) {
 			return true;
-		}else {
+		} else {
 			return false;
 		}
 	}
-	
+
 	public RegistrationPage enterFirstName(String Fname) {
 		driver.findElement(firstName).sendKeys(Fname);
 		return this;
 	}
-	
+
 	public RegistrationPage selectTitle(String titleName) {
-		wrap.selectWrapper(title,titleName);
+		WebElement Title = driver.findElement(title);
+		Select select = new Select(Title);
+		select.selectByVisibleText(titleName);
 		return this;
 	}
 
-	
 	public RegistrationPage enterMiddleName(String Mname) {
 		driver.findElement(middleName).sendKeys(Mname);
 		return this;
 	}
-	
+
 	public RegistrationPage enterLastName(String Lname) {
 		driver.findElement(lastName).sendKeys(Lname);
 		return this;
 	}
-	
+
 	public RegistrationPage selectSex(String sexName) {
-		wrap.selectWrapper(sex, sexName);
+		WebElement Sex = driver.findElement(sex);
+		Select select = new Select(Sex);
+		select.selectByVisibleText(sexName);
 		return this;
 	}
-	
+
 	public RegistrationPage selectEmploymentStatus(String empStsName) {
-		wrap.selectWrapper(employmentSts, empStsName);
+		WebElement EmpSts = driver.findElement(employmentSts);
+		Select select = new Select(EmpSts);
+		select.selectByVisibleText(empStsName);
 		return this;
 	}
-	
-	public RegistrationPage enterAge(int birthMonth,int birthDate, int birthYear) {
+
+	public RegistrationPage enterAge(int birthMonth, int birthDate, int birthYear) {
 		String Age = birthMonth + "/" + birthDate + "/" + birthYear;
 		driver.findElement(age).sendKeys(Age);
 		return this;
 	}
-	
+
 	public RegistrationPage selectMaritalStatus(String MaritalSts) {
-		wrap.selectWrapper(maritalSts, MaritalSts);
+		WebElement MarSts = driver.findElement(maritalSts);
+		Select select = new Select(MarSts);
+		select.selectByVisibleText(MaritalSts);
 		return this;
 	}
-	
+
 	public RegistrationPage enterNumOfDepedents(int noOfDep) {
 		String dep = String.valueOf(noOfDep);
 		driver.findElement(numOfDependents).sendKeys(dep);
 		return this;
 	}
-	
+
 	public RegistrationPage enterUserName(String name) {
 		driver.findElement(userName).sendKeys(name);
 		return this;
 	}
-	
+
 	public RegistrationPage enterEmailAddress(String emailId) {
 		driver.findElement(email).sendKeys(emailId);
 		return this;
 	}
-	
+
 	public RegistrationPage enterPassword(String pass) {
 		driver.findElement(password).sendKeys(pass);
 		return this;
 	}
-	
+
 	public EmailVerificationPage clickOnRegister() {
 		driver.findElement(registerBtn).click();
-		return new EmailVerificationPage();
+		return new EmailVerificationPage(driver);
 	}
-	
-	
-	
-	
-	
-	
-	
+
 }

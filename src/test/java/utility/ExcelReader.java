@@ -48,7 +48,6 @@ public class ExcelReader {
 									System.out.print(cell.getErrorCellValue() + "\t");
 									break;
 								}
-								//cellValue = cell.getStringCellValue();
 								
 							}catch(NullPointerException e) {
 								

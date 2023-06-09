@@ -11,13 +11,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 
 import utility.ExcelReader;
+import utility.PropertyReader;
 
 public class BaseClass {
 
-	public static WebDriver driver;
+	public WebDriver driver;
 	public int browser = 1;
-	public String url = "https://uibank.uipath.com/";
-	public static String excelName = "";
+	public String excelName = "";
 	// User name = ram29104
 	// Password = Praviram2910
 
@@ -30,6 +30,7 @@ public class BaseClass {
 
 		switch (browser) {
 		case 1:
+			System.out.println("User Input is " + 1 + ". So invoking Chrome Browser");
 			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 			System.setProperty("webdriver.http.factory", "jdk-http-client");
 			driver = new ChromeDriver();
@@ -45,7 +46,7 @@ public class BaseClass {
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get(url);
+		driver.get(PropertyReader.getValuesFromProperty("sitURL"));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
@@ -56,7 +57,7 @@ public class BaseClass {
 	}
 	
 	@DataProvider(name="ExcelData")
-	public static Object[][] excelReader() {
+	public Object[][] excelReader() {
 		Object[][] value = ExcelReader.getValueFromExcel(excelName);
 		return value;
 	}
