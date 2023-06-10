@@ -39,10 +39,10 @@ public abstract class HTMLReport {
 		try {
 			if(status.equalsIgnoreCase("pass")) {
 				System.out.println("This testcase is passed");
-				  node.pass(desc, MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot()).build());
+				  test.pass(desc, MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot()).build());
 				 
 			}else if(status.equalsIgnoreCase("fail")) {
-				node.fail(desc, MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot()).build());
+				test.fail(desc, MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot()).build());
 			} else {
 				node.info(desc);
 			}
