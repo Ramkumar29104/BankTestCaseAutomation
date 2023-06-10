@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="2" total="11" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-09T22:46:05 IST" name="UIBankSuite" finished-at="2023-06-09T22:46:32 IST" duration-ms="26424">
+  <suite started-at="2023-06-10T14:29:07 IST" name="UIBankSuite" finished-at="2023-06-10T14:30:10 IST" duration-ms="62870">
     <groups>
     </groups>
-    <test started-at="2023-06-09T22:46:05 IST" name="UIBankTest" finished-at="2023-06-09T22:46:32 IST" duration-ms="26424">
+    <test started-at="2023-06-10T14:29:07 IST" name="UIBankTest" finished-at="2023-06-10T14:30:10 IST" duration-ms="62870">
       <class name="tests.TC01LoginTestCase">
-        <test-method is-config="true" signature="testSetup()[pri:0, instance:tests.TC01LoginTestCase@235ecd9f]" started-at="2023-06-09T22:46:05 IST" name="testSetup" finished-at="2023-06-09T22:46:05 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="reportInit()[pri:0, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:07 IST" name="reportInit" finished-at="2023-06-10T14:29:07 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportInit -->
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:07 IST" name="testSetup" finished-at="2023-06-10T14:29:07 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:tests.TC01LoginTestCase@235ecd9f]" started-at="2023-06-09T22:46:05 IST" name="invokeBrowser" finished-at="2023-06-09T22:46:11 IST" duration-ms="5955" status="PASS">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:07 IST" name="invokeBrowser" finished-at="2023-06-10T14:29:13 IST" duration-ms="5560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method signature="validateAllTheElements()[pri:1, instance:tests.TC01LoginTestCase@235ecd9f]" started-at="2023-06-09T22:46:11 IST" name="validateAllTheElements" finished-at="2023-06-09T22:46:12 IST" duration-ms="303" status="PASS">
+        <test-method signature="validateAllTheElements()[pri:1, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:13 IST" name="validateAllTheElements" finished-at="2023-06-10T14:29:15 IST" duration-ms="2581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAllTheElements -->
-        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:tests.TC01LoginTestCase@235ecd9f]" started-at="2023-06-09T22:46:13 IST" name="loginWithValidCredentials" data-provider="ExcelData" finished-at="2023-06-09T22:46:15 IST" duration-ms="2211" status="PASS">
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:17 IST" name="loginWithValidCredentials" data-provider="ExcelData" finished-at="2023-06-10T14:29:22 IST" duration-ms="5265" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:tests.TC01LoginTestCase@235ecd9f]" started-at="2023-06-09T22:46:15 IST" name="loginWithValidCredentials" data-provider="ExcelData" finished-at="2023-06-09T22:46:17 IST" duration-ms="1400" status="PASS">
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:22 IST" name="loginWithValidCredentials" data-provider="ExcelData" finished-at="2023-06-10T14:29:28 IST" duration-ms="5850" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:tests.TC01LoginTestCase@235ecd9f]" started-at="2023-06-09T22:46:17 IST" name="loginWithValidCredentials" data-provider="ExcelData" finished-at="2023-06-09T22:46:18 IST" duration-ms="1439" status="PASS">
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:28 IST" name="loginWithValidCredentials" data-provider="ExcelData" finished-at="2023-06-10T14:29:33 IST" duration-ms="5347" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,29 +71,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="loginWithInvalidCredentials()[pri:3, instance:tests.TC01LoginTestCase@235ecd9f]" started-at="2023-06-09T22:46:18 IST" name="loginWithInvalidCredentials" finished-at="2023-06-09T22:46:19 IST" duration-ms="759" status="PASS">
+        <test-method signature="loginWithInvalidCredentials()[pri:3, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:33 IST" name="loginWithInvalidCredentials" finished-at="2023-06-10T14:29:35 IST" duration-ms="2336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.TC01LoginTestCase@235ecd9f]" started-at="2023-06-09T22:46:19 IST" name="closeBrowser" finished-at="2023-06-09T22:46:19 IST" duration-ms="294" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:35 IST" name="closeBrowser" finished-at="2023-06-10T14:29:36 IST" duration-ms="392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:30:10 IST" name="flushReport" finished-at="2023-06-10T14:30:11 IST" duration-ms="493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
       </class> <!-- tests.TC01LoginTestCase -->
       <class name="tests.TC02RegisterTestCase">
-        <test-method is-config="true" signature="testSetup()[pri:0, instance:tests.TC02RegisterTestCase@663c9e7a]" started-at="2023-06-09T22:46:05 IST" name="testSetup" finished-at="2023-06-09T22:46:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:29:07 IST" name="testSetup" finished-at="2023-06-10T14:29:07 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:tests.TC02RegisterTestCase@663c9e7a]" started-at="2023-06-09T22:46:19 IST" name="invokeBrowser" finished-at="2023-06-09T22:46:25 IST" duration-ms="5306" status="PASS">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:29:36 IST" name="invokeBrowser" finished-at="2023-06-10T14:29:42 IST" duration-ms="5807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method signature="validateAllTheElements()[pri:1, instance:tests.TC02RegisterTestCase@663c9e7a]" started-at="2023-06-09T22:46:25 IST" name="validateAllTheElements" finished-at="2023-06-09T22:46:25 IST" duration-ms="294" status="PASS">
+        <test-method signature="validateAllTheElements()[pri:1, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:29:42 IST" name="validateAllTheElements" finished-at="2023-06-10T14:29:44 IST" duration-ms="1934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAllTheElements -->
-        <test-method signature="newUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.TC02RegisterTestCase@663c9e7a]" started-at="2023-06-09T22:46:25 IST" name="newUserRegistration" data-provider="ExcelData" finished-at="2023-06-09T22:46:28 IST" duration-ms="2685" status="PASS">
+        <test-method signature="newUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:29:44 IST" name="newUserRegistration" data-provider="ExcelData" finished-at="2023-06-10T14:29:54 IST" duration-ms="9727" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +173,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newUserRegistration -->
-        <test-method signature="newUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.TC02RegisterTestCase@663c9e7a]" started-at="2023-06-09T22:46:28 IST" name="newUserRegistration" data-provider="ExcelData" finished-at="2023-06-09T22:46:30 IST" duration-ms="1900" status="PASS">
+        <test-method signature="newUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:29:54 IST" name="newUserRegistration" data-provider="ExcelData" finished-at="2023-06-10T14:30:02 IST" duration-ms="8272" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -241,7 +249,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newUserRegistration -->
-        <test-method signature="newUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.TC02RegisterTestCase@663c9e7a]" started-at="2023-06-09T22:46:30 IST" name="newUserRegistration" data-provider="ExcelData" finished-at="2023-06-09T22:46:31 IST" duration-ms="1721" status="PASS">
+        <test-method signature="newUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:30:02 IST" name="newUserRegistration" data-provider="ExcelData" finished-at="2023-06-10T14:30:10 IST" duration-ms="7991" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -317,7 +325,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newUserRegistration -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.TC02RegisterTestCase@663c9e7a]" started-at="2023-06-09T22:46:31 IST" name="closeBrowser" finished-at="2023-06-09T22:46:32 IST" duration-ms="258" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:30:10 IST" name="closeBrowser" finished-at="2023-06-10T14:30:10 IST" duration-ms="359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

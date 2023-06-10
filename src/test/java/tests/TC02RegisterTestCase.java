@@ -15,21 +15,26 @@ public class TC02RegisterTestCase extends BaseClass {
 	@BeforeTest
 	public void testSetup() {
 		excelName = "TC02";
+		testCaseName = "Registration";
+		testDescription = "Validating Registration Functionality";
+		module = "Registration module";
+		author = "Praveena";
+		category = "Sanity";
 	}
 	
 	@Test(priority = 1)
 	public void validateAllTheElements() {
-		Boolean result = new LoginPage(driver)
+		Boolean result = new LoginPage(driver,node)
 		.registerNewAccount()
 		.validateAllElementsInRegisterPage();
 		Assert.assertEquals(result, true);
-		new RegistrationPage(driver).clickOnLogo();
+		new RegistrationPage(driver,node).clickOnLogo();
 	}
 	
 	@Test(priority = 2, dataProvider = "ExcelData")
 	public void newUserRegistration(String firstName, String title, String middleName, String lastName, String sex, 
 			String employmentStatus,int birthMonth,int birthDate, int birthYear, String maritalStatus, int noOfDep, String userName, String email, String password) throws Exception {
-		Boolean result = new LoginPage(driver)
+		Boolean result = new LoginPage(driver,node)
 		.registerNewAccount()
 		.enterFirstName(firstName)
 		.selectTitle(title)

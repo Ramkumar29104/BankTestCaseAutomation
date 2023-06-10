@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [UIBankSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="classes" name="UIBankTest(failed)">
+  <test thread-count="5" name="UIBankTest(failed)">
     <classes>
+      <class name="tests.TC02RegisterTestCase">
+        <methods>
+          <include name="invokeBrowser"/>
+          <include name="reportInit"/>
+          <include name="testSetup"/>
+          <include name="flushReport"/>
+          <include name="closeBrowser"/>
+          <include name="newUserRegistration" invocation-numbers="0 1 2"/>
+          <include name="validateAllTheElements"/>
+        </methods>
+      </class> <!-- tests.TC02RegisterTestCase -->
       <class name="tests.TC01LoginTestCase">
         <methods>
           <include name="invokeBrowser"/>
-          <include name="loginWithValidCredentials"/>
+          <include name="reportInit"/>
+          <include name="validateAllTheElements"/>
+          <include name="loginWithValidCredentials" invocation-numbers="0 1 2"/>
           <include name="testSetup"/>
+          <include name="flushReport"/>
+          <include name="loginWithInvalidCredentials"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- tests.TC01LoginTestCase -->
