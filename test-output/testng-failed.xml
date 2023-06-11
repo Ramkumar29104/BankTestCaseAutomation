@@ -10,7 +10,7 @@
           <include name="testSetup"/>
           <include name="flushReport"/>
           <include name="closeBrowser"/>
-          <include name="newUserRegistration" invocation-numbers="0 1 2"/>
+          <include name="newUserRegistration"/>
           <include name="validateAllTheElements"/>
         </methods>
       </class> <!-- tests.TC02RegisterTestCase -->
@@ -19,7 +19,7 @@
           <include name="invokeBrowser"/>
           <include name="reportInit"/>
           <include name="validateAllTheElements"/>
-          <include name="loginWithValidCredentials" invocation-numbers="0 1 2"/>
+          <include name="loginWithValidCredentials"/>
           <include name="testSetup"/>
           <include name="flushReport"/>
           <include name="loginWithInvalidCredentials"/>

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-UIBankSuite" class="navigator-link">
-              <span class="suite-name border-passed">UIBankSuite</span>
+              <span class="suite-name border-failed">UIBankSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,61 +92,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-UIBankSuite" class="hide-methods passed suite-UIBankSuite"> (hide)</a> <!-- hide-methods passed suite-UIBankSuite -->
-                      <a href="#" panel-name="suite-UIBankSuite" class="show-methods passed suite-UIBankSuite"> (show)</a> <!-- show-methods passed suite-UIBankSuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-UIBankSuite" class="hide-methods failed suite-UIBankSuite"> (hide)</a> <!-- hide-methods failed suite-UIBankSuite -->
+                      <a href="#" panel-name="suite-UIBankSuite" class="show-methods failed suite-UIBankSuite"> (show)</a> <!-- show-methods failed suite-UIBankSuite -->
                     </span>
-                    <div class="method-list-content passed suite-UIBankSuite">
+                    <div class="method-list-content failed suite-UIBankSuite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-UIBankSuite" title="tests.TC01LoginTestCase" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-UIBankSuite" title="tests.TC02RegisterTestCase" class="method navigator-link" hash-for-method="newUserRegistration">newUserRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-UIBankSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-UIBankSuite" class="hide-methods skipped suite-UIBankSuite"> (hide)</a> <!-- hide-methods skipped suite-UIBankSuite -->
+                      <a href="#" panel-name="suite-UIBankSuite" class="show-methods skipped suite-UIBankSuite"> (show)</a> <!-- show-methods skipped suite-UIBankSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-UIBankSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-UIBankSuite" title="tests.TC01LoginTestCase" class="method navigator-link" hash-for-method="loginWithInvalidCredentials">loginWithInvalidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-UIBankSuite" title="tests.TC01LoginTestCase" class="method navigator-link" hash-for-method="loginWithValidCredentials(ram29104, Praviram2910)">loginWithValidCredentials(ram29104, Praviram2910)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-UIBankSuite" title="tests.TC01LoginTestCase" class="method navigator-link" hash-for-method="loginWithValidCredentials(test1, test1)">loginWithValidCredentials(test1, test1)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-UIBankSuite" title="tests.TC01LoginTestCase" class="method navigator-link" hash-for-method="loginWithValidCredentials(Mathan, Testing123)">loginWithValidCredentials(Mathan, Testing123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-UIBankSuite" title="tests.TC02RegisterTestCase" class="method navigator-link" hash-for-method="newUserRegistration(Prem, Mr, Kumar, R, Male, Full-time, 12, 12, 1997, Single, 1, prem, prem, Prem100)">newUserRegistration(Prem, Mr, Kumar, R, Male, Full-time, 12, 12, 1997, Single, 1, prem, prem, Prem100)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-UIBankSuite" title="tests.TC02RegisterTestCase" class="method navigator-link" hash-for-method="newUserRegistration(Ram, Mr, Kumar, R, Male, Full-time, 10, 29, 1998, Single, 1, ram, ram, Praviram2910)">newUserRegistration(Ram, Mr, Kumar, R, Male, Full-time, 10, 29, 1998, Single, 1, ram, ram, Praviram2910)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-UIBankSuite" title="tests.TC02RegisterTestCase" class="method navigator-link" hash-for-method="newUserRegistration(Rajesh, Mr, waran, S, Male, Full-time, 7, 11, 1996, Single, 1, rajesh, rajesh, Rajesh100)">newUserRegistration(Rajesh, Mr, waran, S, Male, Full-time, 7, 11, 1996, Single, 1, rajesh, rajesh, Rajesh100)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-UIBankSuite" title="tests.TC02RegisterTestCase" class="method navigator-link" hash-for-method="validateAllTheElements">validateAllTheElements</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-UIBankSuite" title="tests.TC01LoginTestCase" class="method navigator-link" hash-for-method="validateAllTheElements">validateAllTheElements</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-UIBankSuite -->
+                    </div> <!-- method-list-content skipped suite-UIBankSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -158,48 +147,83 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-UIBankSuite" class="panel UIBankSuite">
-          <div class="suite-UIBankSuite-class-passed">
+          <div class="suite-UIBankSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.TC02RegisterTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="newUserRegistration(Prem, Mr, Kumar, R, Male, Full-time, 12, 12, 1997, Single, 1, prem, prem, Prem100)">
-                  </a> <!-- newUserRegistration(Prem, Mr, Kumar, R, Male, Full-time, 12, 12, 1997, Single, 1, prem, prem, Prem100) -->
+                  <a name="newUserRegistration">
+                  </a> <!-- newUserRegistration -->
                   <span class="method-name">newUserRegistration</span>
-                  <span class="parameters">(Prem,Mr,Kumar,R,Male,Full-time,12,12,1997,Single,1,prem,prem,Prem100)</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.Error: Unresolved compilation problem: 
+	ExcelReader cannot be resolved
+
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	ExcelReader cannot be resolved
+
+	at base.BaseClass.excelReader(BaseClass.java:81)
+	... 25 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-UIBankSuite-class-failed -->
+          <div class="suite-UIBankSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.TC01LoginTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="newUserRegistration(Ram, Mr, Kumar, R, Male, Full-time, 10, 29, 1998, Single, 1, ram, ram, Praviram2910)">
-                  </a> <!-- newUserRegistration(Ram, Mr, Kumar, R, Male, Full-time, 10, 29, 1998, Single, 1, ram, ram, Praviram2910) -->
-                  <span class="method-name">newUserRegistration</span>
-                  <span class="parameters">(Ram,Mr,Kumar,R,Male,Full-time,10,29,1998,Single,1,ram,ram,Praviram2910)</span>
+                  <a name="loginWithValidCredentials">
+                  </a> <!-- loginWithValidCredentials -->
+                  <span class="method-name">loginWithValidCredentials</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.Error: Unresolved compilation problem: 
+	ExcelReader cannot be resolved
+
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	ExcelReader cannot be resolved
+
+	at base.BaseClass.excelReader(BaseClass.java:81)
+	... 25 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="newUserRegistration(Rajesh, Mr, waran, S, Male, Full-time, 7, 11, 1996, Single, 1, rajesh, rajesh, Rajesh100)">
-                  </a> <!-- newUserRegistration(Rajesh, Mr, waran, S, Male, Full-time, 7, 11, 1996, Single, 1, rajesh, rajesh, Rajesh100) -->
-                  <span class="method-name">newUserRegistration</span>
-                  <span class="parameters">(Rajesh,Mr,waran,S,Male,Full-time,7,11,1996,Single,1,rajesh,rajesh,Rajesh100)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-UIBankSuite-class-failed -->
+          <div class="suite-UIBankSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.TC02RegisterTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="validateAllTheElements">
                   </a> <!-- validateAllTheElements -->
                   <span class="method-name">validateAllTheElements</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	PropertyReader cannot be resolved
+
+	at base.BaseClass.invokeBrowser(BaseClass.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-UIBankSuite-class-passed -->
-          <div class="suite-UIBankSuite-class-passed">
+          </div> <!-- suite-UIBankSuite-class-skipped -->
+          <div class="suite-UIBankSuite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">tests.TC01LoginTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -208,30 +232,13 @@
                   <a name="loginWithInvalidCredentials">
                   </a> <!-- loginWithInvalidCredentials -->
                   <span class="method-name">loginWithInvalidCredentials</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithValidCredentials(ram29104, Praviram2910)">
-                  </a> <!-- loginWithValidCredentials(ram29104, Praviram2910) -->
-                  <span class="method-name">loginWithValidCredentials</span>
-                  <span class="parameters">(ram29104,Praviram2910)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithValidCredentials(test1, test1)">
-                  </a> <!-- loginWithValidCredentials(test1, test1) -->
-                  <span class="method-name">loginWithValidCredentials</span>
-                  <span class="parameters">(test1,test1)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithValidCredentials(Mathan, Testing123)">
-                  </a> <!-- loginWithValidCredentials(Mathan, Testing123) -->
-                  <span class="method-name">loginWithValidCredentials</span>
-                  <span class="parameters">(Mathan,Testing123)</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	PropertyReader cannot be resolved
+
+	at base.BaseClass.invokeBrowser(BaseClass.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -239,10 +246,17 @@
                   <a name="validateAllTheElements">
                   </a> <!-- validateAllTheElements -->
                   <span class="method-name">validateAllTheElements</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	PropertyReader cannot be resolved
+
+	at base.BaseClass.invokeBrowser(BaseClass.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-UIBankSuite-class-passed -->
+          </div> <!-- suite-UIBankSuite-class-skipped -->
         </div> <!-- panel UIBankSuite -->
         <div panel-name="test-xml-UIBankSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -296,48 +310,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'newUserRegistration')
 data.setCell(0, 2, 'tests.TC02RegisterTestCase')
-data.setCell(0, 3, 9727);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'newUserRegistration')
-data.setCell(1, 2, 'tests.TC02RegisterTestCase')
-data.setCell(1, 3, 8272);
+data.setCell(1, 1, 'loginWithValidCredentials')
+data.setCell(1, 2, 'tests.TC01LoginTestCase')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'newUserRegistration')
+data.setCell(2, 1, 'validateAllTheElements')
 data.setCell(2, 2, 'tests.TC02RegisterTestCase')
-data.setCell(2, 3, 7991);
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginWithValidCredentials')
+data.setCell(3, 1, 'validateAllTheElements')
 data.setCell(3, 2, 'tests.TC01LoginTestCase')
-data.setCell(3, 3, 5850);
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginWithValidCredentials')
+data.setCell(4, 1, 'loginWithInvalidCredentials')
 data.setCell(4, 2, 'tests.TC01LoginTestCase')
-data.setCell(4, 3, 5347);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginWithValidCredentials')
-data.setCell(5, 2, 'tests.TC01LoginTestCase')
-data.setCell(5, 3, 5265);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validateAllTheElements')
-data.setCell(6, 2, 'tests.TC01LoginTestCase')
-data.setCell(6, 3, 2581);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginWithInvalidCredentials')
-data.setCell(7, 2, 'tests.TC01LoginTestCase')
-data.setCell(7, 3, 2336);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'validateAllTheElements')
-data.setCell(8, 2, 'tests.TC02RegisterTestCase')
-data.setCell(8, 3, 1934);
+data.setCell(4, 3, 0);
 window.suiteTableData['UIBankSuite']= { tableData: data, tableDiv: 'times-div-UIBankSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 49 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-UIBankSuite">
               </div> <!-- times-div-UIBankSuite -->
             </div> <!-- times-div -->
@@ -379,79 +377,59 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">testSetup</span>
-                <span class="method-start">235 ms</span>
+                <span class="method-start">226 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC02RegisterTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">testSetup</span>
-                <span class="method-start">236 ms</span>
+                <span class="method-start">227 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC01LoginTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">invokeBrowser</span>
-                <span class="method-start">259 ms</span>
+                <span class="method-start">249 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validateAllTheElements</span>
-                <span class="method-start">5851 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginWithValidCredentials(ram29104, Praviram2910)</span>
-                <span class="method-start">9624 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginWithValidCredentials(test1, test1)</span>
-                <span class="method-start">14891 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginWithValidCredentials(Mathan, Testing123)</span>
-                <span class="method-start">20744 ms</span>
+                <span class="method-start">295 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginWithInvalidCredentials</span>
-                <span class="method-start">26096 ms</span>
+                <span class="method-start">314 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">28438 ms</span>
+                <span class="method-start">323 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC02RegisterTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">invokeBrowser</span>
-                <span class="method-start">28833 ms</span>
+                <span class="method-start">326 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validateAllTheElements</span>
-                <span class="method-start">34641 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">newUserRegistration(Ram, Mr, Kumar, R, Male, Full-time, 10, 29, 1998, Single, 1, ram, ram, Praviram2910)</span>
-                <span class="method-start">36735 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">newUserRegistration(Rajesh, Mr, waran, S, Male, Full-time, 7, 11, 1996, Single, 1, rajesh, rajesh, Rajesh100)</span>
-                <span class="method-start">46464 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">newUserRegistration(Prem, Mr, Kumar, R, Male, Full-time, 12, 12, 1997, Single, 1, prem, prem, Prem100)</span>
-                <span class="method-start">54739 ms</span>
+                <span class="method-start">331 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">62733 ms</span>
+                <span class="method-start">340 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC01LoginTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">63214 ms</span>
+                <span class="method-start">416 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

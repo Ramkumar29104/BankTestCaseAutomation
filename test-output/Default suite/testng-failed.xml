@@ -9,7 +9,7 @@
           <include name="reportInit"/>
           <include name="validateAllTheElements"/>
           <include name="testSetup"/>
-          <include name="loginWithValidCredentials" invocation-numbers="0 1 2"/>
+          <include name="loginWithValidCredentials"/>
           <include name="flushReport"/>
           <include name="loginWithInvalidCredentials"/>
           <include name="closeBrowser"/>

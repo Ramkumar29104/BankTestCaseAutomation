@@ -1,331 +1,365 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="11" passed="9" failed="0" skipped="0">
+<testng-results ignored="2" total="7" passed="0" failed="2" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-10T14:29:07 IST" name="UIBankSuite" finished-at="2023-06-10T14:30:10 IST" duration-ms="62870">
+  <suite started-at="2023-06-11T21:44:37 IST" name="UIBankSuite" finished-at="2023-06-11T21:44:37 IST" duration-ms="124">
     <groups>
     </groups>
-    <test started-at="2023-06-10T14:29:07 IST" name="UIBankTest" finished-at="2023-06-10T14:30:10 IST" duration-ms="62870">
+    <test started-at="2023-06-11T21:44:37 IST" name="UIBankTest" finished-at="2023-06-11T21:44:37 IST" duration-ms="124">
       <class name="tests.TC01LoginTestCase">
-        <test-method is-config="true" signature="reportInit()[pri:0, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:07 IST" name="reportInit" finished-at="2023-06-10T14:29:07 IST" duration-ms="221" status="PASS">
+        <test-method is-config="true" signature="reportInit()[pri:0, instance:tests.TC01LoginTestCase@17f9d882]" started-at="2023-06-11T21:44:37 IST" name="reportInit" finished-at="2023-06-11T21:44:37 IST" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportInit -->
-        <test-method is-config="true" signature="testSetup()[pri:0, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:07 IST" name="testSetup" finished-at="2023-06-10T14:29:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:tests.TC01LoginTestCase@17f9d882]" started-at="2023-06-11T21:44:37 IST" name="testSetup" finished-at="2023-06-11T21:44:37 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:07 IST" name="invokeBrowser" finished-at="2023-06-10T14:29:13 IST" duration-ms="5560" status="PASS">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:tests.TC01LoginTestCase@17f9d882]" started-at="2023-06-11T21:44:37 IST" name="invokeBrowser" finished-at="2023-06-11T21:44:37 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+PropertyReader cannot be resolved
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+PropertyReader cannot be resolved
+
+at base.BaseClass.invokeBrowser(BaseClass.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method signature="validateAllTheElements()[pri:1, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:13 IST" name="validateAllTheElements" finished-at="2023-06-10T14:29:15 IST" duration-ms="2581" status="PASS">
+        <test-method signature="validateAllTheElements()[pri:1, instance:tests.TC01LoginTestCase@17f9d882]" started-at="2023-06-11T21:44:37 IST" name="validateAllTheElements" finished-at="2023-06-11T21:44:37 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+PropertyReader cannot be resolved
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+PropertyReader cannot be resolved
+
+at base.BaseClass.invokeBrowser(BaseClass.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAllTheElements -->
-        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:17 IST" name="loginWithValidCredentials" data-provider="ExcelData" finished-at="2023-06-10T14:29:22 IST" duration-ms="5265" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ram29104]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Praviram2910]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:tests.TC01LoginTestCase@17f9d882]" started-at="2023-06-11T21:44:37 IST" name="loginWithValidCredentials" data-provider="ExcelData" finished-at="2023-06-11T21:44:37 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+ExcelReader cannot be resolved
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.Error: Unresolved compilation problem: 
+ExcelReader cannot be resolved
+
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.Error: Unresolved compilation problem: 
+ExcelReader cannot be resolved
+
+at base.BaseClass.excelReader(BaseClass.java:81)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:22 IST" name="loginWithValidCredentials" data-provider="ExcelData" finished-at="2023-06-10T14:29:28 IST" duration-ms="5850" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:28 IST" name="loginWithValidCredentials" data-provider="ExcelData" finished-at="2023-06-10T14:29:33 IST" duration-ms="5347" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mathan]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Testing123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="loginWithInvalidCredentials()[pri:3, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:33 IST" name="loginWithInvalidCredentials" finished-at="2023-06-10T14:29:35 IST" duration-ms="2336" status="PASS">
+        <test-method signature="loginWithInvalidCredentials()[pri:3, instance:tests.TC01LoginTestCase@17f9d882]" started-at="2023-06-11T21:44:37 IST" name="loginWithInvalidCredentials" finished-at="2023-06-11T21:44:37 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+PropertyReader cannot be resolved
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+PropertyReader cannot be resolved
+
+at base.BaseClass.invokeBrowser(BaseClass.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:29:35 IST" name="closeBrowser" finished-at="2023-06-10T14:29:36 IST" duration-ms="392" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.TC01LoginTestCase@17f9d882]" started-at="2023-06-11T21:44:37 IST" name="closeBrowser" finished-at="2023-06-11T21:44:37 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.TC01LoginTestCase@4b29d1d2]" started-at="2023-06-10T14:30:10 IST" name="flushReport" finished-at="2023-06-10T14:30:11 IST" duration-ms="493" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.TC01LoginTestCase@17f9d882]" started-at="2023-06-11T21:44:38 IST" name="flushReport" finished-at="2023-06-11T21:44:38 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
       </class> <!-- tests.TC01LoginTestCase -->
       <class name="tests.TC02RegisterTestCase">
-        <test-method is-config="true" signature="testSetup()[pri:0, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:29:07 IST" name="testSetup" finished-at="2023-06-10T14:29:07 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:tests.TC02RegisterTestCase@28261e8e]" started-at="2023-06-11T21:44:37 IST" name="testSetup" finished-at="2023-06-11T21:44:37 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:29:36 IST" name="invokeBrowser" finished-at="2023-06-10T14:29:42 IST" duration-ms="5807" status="PASS">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:tests.TC02RegisterTestCase@28261e8e]" started-at="2023-06-11T21:44:37 IST" name="invokeBrowser" finished-at="2023-06-11T21:44:37 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+PropertyReader cannot be resolved
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+PropertyReader cannot be resolved
+
+at base.BaseClass.invokeBrowser(BaseClass.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method signature="validateAllTheElements()[pri:1, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:29:42 IST" name="validateAllTheElements" finished-at="2023-06-10T14:29:44 IST" duration-ms="1934" status="PASS">
+        <test-method signature="validateAllTheElements()[pri:1, instance:tests.TC02RegisterTestCase@28261e8e]" started-at="2023-06-11T21:44:37 IST" name="validateAllTheElements" finished-at="2023-06-11T21:44:37 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+PropertyReader cannot be resolved
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+PropertyReader cannot be resolved
+
+at base.BaseClass.invokeBrowser(BaseClass.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAllTheElements -->
-        <test-method signature="newUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:29:44 IST" name="newUserRegistration" data-provider="ExcelData" finished-at="2023-06-10T14:29:54 IST" duration-ms="9727" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ram]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Mr]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Kumar]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[R]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Male]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Full-time]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[29]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[1998]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Single]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[ram]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[ram]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[Praviram2910]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="newUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.TC02RegisterTestCase@28261e8e]" started-at="2023-06-11T21:44:37 IST" name="newUserRegistration" data-provider="ExcelData" finished-at="2023-06-11T21:44:37 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+ExcelReader cannot be resolved
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.Error: Unresolved compilation problem: 
+ExcelReader cannot be resolved
+
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.Error: Unresolved compilation problem: 
+ExcelReader cannot be resolved
+
+at base.BaseClass.excelReader(BaseClass.java:81)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newUserRegistration -->
-        <test-method signature="newUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:29:54 IST" name="newUserRegistration" data-provider="ExcelData" finished-at="2023-06-10T14:30:02 IST" duration-ms="8272" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Rajesh]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Mr]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[waran]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[S]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Male]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Full-time]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[7]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[1996]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Single]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[rajesh]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[rajesh]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[Rajesh100]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newUserRegistration -->
-        <test-method signature="newUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:30:02 IST" name="newUserRegistration" data-provider="ExcelData" finished-at="2023-06-10T14:30:10 IST" duration-ms="7991" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Prem]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Mr]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Kumar]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[R]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Male]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Full-time]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[1997]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Single]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[prem]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[prem]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[Prem100]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newUserRegistration -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.TC02RegisterTestCase@5f049ea1]" started-at="2023-06-10T14:30:10 IST" name="closeBrowser" finished-at="2023-06-10T14:30:10 IST" duration-ms="359" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.TC02RegisterTestCase@28261e8e]" started-at="2023-06-11T21:44:37 IST" name="closeBrowser" finished-at="2023-06-11T21:44:37 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
